@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1.65 40 40">
+  <style>
+    .sun{fill:#DD7440}
+    .bar{stroke:#2E5A45}
+    @media (prefers-color-scheme:dark){
+      .sun{fill:#EE8A55}
+      .bar{stroke:#6FBF95}
+    }
+  </style>
+  <path class="sun" d="M8 20a12 12 0 0 1 24 0Z"/>
+  <path class="bar" d="M2 24h36" stroke-width="2.6" stroke-linecap="round"/>
+  <path class="bar" d="M7 29h26" stroke-width="2.6" stroke-linecap="round" opacity=".55"/>
+  <path class="bar" d="M13 34h14" stroke-width="2.6" stroke-linecap="round" opacity=".3"/>
+</svg>
