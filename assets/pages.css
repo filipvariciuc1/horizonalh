@@ -7,6 +7,7 @@
   --sage:#E9EDE2;
   --sand:#F2ECDE;
   --sun:#DD7440;
+  --sun-ink:#A84C1C;
   --sun-soft:#F4C9A8;
   --line:#DCD8CB;
   --display:"Bricolage Grotesque",Georgia,serif;
@@ -26,7 +27,7 @@ h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;font-weig
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .eyebrow{
   font-family:var(--display);font-size:.78rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.14em;color:var(--sun);
+  text-transform:uppercase;letter-spacing:.14em;color:var(--sun-ink);
   display:flex;align-items:center;gap:.6em;margin-bottom:14px;
 }
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--sun);border-radius:2px}

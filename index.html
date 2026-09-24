@@ -75,6 +75,7 @@
   --sage:#E9EDE2;
   --sand:#F2ECDE;
   --sun:#DD7440;
+  --sun-ink:#A84C1C;
   --sun-soft:#F4C9A8;
   --line:#DCD8CB;
   --display:"Bricolage Grotesque",Georgia,serif;
@@ -96,7 +97,7 @@ section{scroll-margin-top:28px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .eyebrow{
   font-family:var(--display);font-size:.78rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.14em;color:var(--sun);
+  text-transform:uppercase;letter-spacing:.14em;color:var(--sun-ink);
   display:flex;align-items:center;gap:.6em;
 }
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--sun);border-radius:2px}
@@ -184,6 +185,8 @@ section{scroll-margin-top:28px}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
 .hero-note{margin-top:22px;font-size:.95rem;color:var(--ink-soft)}
 .hero-note strong{color:var(--ink)}
+picture{display:contents}
+.hero-photo img,.about-photos img{height:auto}
 .hero-photo{position:relative}
 .hero-photo img{
   width:100%;aspect-ratio:4/4.6;object-fit:cover;
@@ -223,8 +226,8 @@ section{scroll-margin-top:28px}
 .about p strong{color:var(--ink)}
 .about-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
 .about-photos img{border-radius:20px;object-fit:cover;width:100%}
-.about-photos img:first-child{aspect-ratio:3/3.6;border-radius:999px 999px 20px 20px}
-.about-photos img:last-child{aspect-ratio:3/3.6;margin-top:44px;border-radius:20px 20px 999px 999px}
+.about-photos picture:first-child img{aspect-ratio:3/3.6;border-radius:999px 999px 20px 20px}
+.about-photos picture:last-child img{aspect-ratio:3/3.6;margin-top:44px;border-radius:20px 20px 999px 999px}
 @media (max-width:820px){.about-grid{grid-template-columns:1fr;gap:40px}.about{padding:72px 0}}
 
 /* services */
@@ -422,7 +425,7 @@ footer small{font-size:.85rem}
         </nav>
       </div>
       <div class="hero-photo">
-        <img src="images/d95c2f_7fcc906389e7464fadb04c7044795a62.jpg" fetchpriority="high" alt="The backyard garden at Horizon: a shaded patio table among flower beds and palm trees" width="800" height="920">
+        <picture><source type="image/webp" srcset="images/d95c2f_7fcc906389e7464fadb04c7044795a62-480.webp 480w, images/d95c2f_7fcc906389e7464fadb04c7044795a62.webp 750w" sizes="(max-width:820px) calc(114vw - 55px), 710px"><img src="images/d95c2f_7fcc906389e7464fadb04c7044795a62.jpg" fetchpriority="high" alt="The backyard garden at Horizon: a shaded patio table among flower beds and palm trees" width="800" height="920"></picture>
         <div class="badge">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
             <circle cx="15" cy="15" r="14" stroke="#DD7440" stroke-width="2"/>
@@ -446,8 +449,8 @@ footer small{font-size:.85rem}
   <section class="about" id="about">
     <div class="wrap about-grid">
       <div class="about-photos">
-        <img src="images/d95c2f_895de3824c544cb294f5c0589e330dcd.jpg" alt="The front of the house: a single-story Arizona home with palm trees and tended gardens" width="600" height="720" loading="lazy">
-        <img src="images/d95c2f_052934d73ebb43c8b9b4aedeec84de40.jpg" alt="A bright living room with a piano, bookshelves, and comfortable seating" width="600" height="720" loading="lazy">
+        <picture><source type="image/webp" srcset="images/d95c2f_895de3824c544cb294f5c0589e330dcd-400.webp 400w, images/d95c2f_895de3824c544cb294f5c0589e330dcd-600.webp 600w, images/d95c2f_895de3824c544cb294f5c0589e330dcd.webp 960w" sizes="(max-width:820px) calc(60vw - 39px), 280px"><img src="images/d95c2f_895de3824c544cb294f5c0589e330dcd.jpg" alt="The front of the house: a single-story Arizona home with palm trees and tended gardens" width="600" height="720" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="images/d95c2f_052934d73ebb43c8b9b4aedeec84de40-480.webp 480w, images/d95c2f_052934d73ebb43c8b9b4aedeec84de40-800.webp 800w, images/d95c2f_052934d73ebb43c8b9b4aedeec84de40.webp 1200w" sizes="(max-width:820px) calc(90vw - 58px), 420px"><img src="images/d95c2f_052934d73ebb43c8b9b4aedeec84de40.jpg" alt="A bright living room with a piano, bookshelves, and comfortable seating" width="600" height="720" loading="lazy"></picture>
       </div>
       <div>
         <p class="eyebrow">Our home</p>
